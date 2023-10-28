@@ -1,0 +1,18 @@
+// Есть проблема очень долго висит, нужно рабираться!
+#include <stdio.h>
+#include <conio.h>
+#include <time.h>
+
+int main(){
+    double a = 3.1415926; 
+    double b = 2.718;
+    printf("%s", "Speed test ran C!\n");
+    float start = clock();
+    for(int i = 0; i < 100000000; i++){
+        a+=b;
+    }
+    float end = clock();
+    printf("%s%.3f%s\n","C: ", (end-start),"ms");
+    printf("%.0f", a);
+    return 0;
+}
