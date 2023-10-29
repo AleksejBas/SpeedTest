@@ -1,6 +1,4 @@
-// Есть проблема очень долго висит, нужно рабираться!
 #include <stdio.h>
-#include <conio.h>
 #include <time.h>
 
 int main(){
@@ -13,6 +11,7 @@ int main(){
     }
     float end = clock();
     printf("%s%.3f%s\n","C: ", (end-start),"ms");
-    printf("%.0f", a);
+    int data = (int)a;
+    printf("%d", data);
     return 0;
 }
